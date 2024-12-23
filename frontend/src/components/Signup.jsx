@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
+import server from "../environment";
 function Signup() {
   const [username, setUserName] = useState("");
   const [email, setEmail] = useState("");
@@ -13,7 +14,7 @@ function Signup() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4001/user/signup",
+        `${server}/user/signup`,
         {
           username,
           email,
