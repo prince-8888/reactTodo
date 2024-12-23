@@ -5,15 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev":"node index.js",
+    "dev": "node index.js",
     "start": "node index.js",
-    "prod":"pm2 index.js",
+    "prod": "pm2 index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Prince",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
