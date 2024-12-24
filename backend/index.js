@@ -19,7 +19,7 @@ app.use(
     origin: "*",
     credentials: true,
     methods: "GET,POST,PUT,DELETE",
-    allowedHeaders: ["Content-Type", "Authorization"], // Add other headers you want to allow here.
+    allowedHeaders: "*", // Add other headers you want to allow here.
   })
 );
 
